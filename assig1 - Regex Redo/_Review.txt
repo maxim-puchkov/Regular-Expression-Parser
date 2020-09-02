@@ -1,0 +1,6 @@
+7.35/10.00
+
+Implemented mostly-working Glushkov.
+The handling of escaped characters in parseElement worked but was confusing. Would have been better to use:
+parseChar ('\\':c:s) = Just ((Ch c), s)
+Pairing logic for Star and Plus was not quite correct.
